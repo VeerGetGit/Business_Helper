@@ -1,29 +1,15 @@
-🤖 AI-Based Automation Tool for Converting Business Requirements into Technical Specifications
-📌 Project Overview
+AI-Based Automation Tool for Converting Business Requirements into Technical Specifications
+1. Project Overview
 
-This project is an AI-powered automation tool that converts high-level business requirements into low-level technical specifications, including:
+This project presents an AI-based automation tool designed to convert high-level business requirements into detailed technical specifications. The system automatically generates system modules, database schemas, and pseudo code by analyzing natural language inputs.
 
-System modules
+The solution leverages Generative Artificial Intelligence using openai-gpt-oss120B via the Groq API to assist in early-stage software design. The primary objective is to reduce manual design effort, improve consistency, and accelerate the software development lifecycle.
 
-Database schemas
+2. Features
 
-Pseudo code
+Automated transformation of business requirements into technical specifications
 
-It leverages Generative AI using openai-gpt-oss120B via the Groq API to analyze natural language requirements and generate structured, developer-ready outputs.
-
-✨ The tool is designed to:
-
-Reduce manual effort
-
-Improve consistency
-
-Accelerate system design in real-world software development projects
-
-🚀 Features
-
-Automated conversion of business requirements into technical specifications
-
-Generates:
+Generation of:
 
 System modules
 
@@ -31,13 +17,15 @@ Database schema
 
 Pseudo code
 
-Detects missing or unclear requirements
+Identification of missing or ambiguous requirements
 
-Provides structured JSON output
+Structured output in JSON format
 
-Flask backend API with Streamlit frontend
+Backend API implemented using Flask
 
-Simulates a panel of architects:
+Frontend user interface developed with Streamlit
+
+Simulation of multiple architectural perspectives:
 
 Software Architect
 
@@ -47,13 +35,13 @@ Database Architect
 
 Security Architect
 
-🛠️ Technologies Used
+3. Technologies Used
 
 Python
 
-Flask – Backend API
+Flask (Backend API)
 
-Streamlit – Frontend UI
+Streamlit (Frontend Interface)
 
 Groq API
 
@@ -61,68 +49,27 @@ openai-gpt-oss120B
 
 JSON
 
-🏗️ System Architecture
-🔹 Frontend (Streamlit)
+4. System Architecture
+4.1 Frontend Layer (Streamlit)
 
-User interface to input business requirements
+The frontend provides a user interface where business requirements can be entered and the generated technical specifications can be reviewed.
 
-Displays generated technical specifications
+4.2 Backend Layer (Flask)
 
-🔹 Backend (Flask)
+The backend manages incoming requests, constructs architect-level prompts, communicates with the AI model, and returns structured responses.
 
-Handles API requests
+4.3 AI Processing Layer
 
-Constructs architect-level AI prompts
+The AI layer, powered by Groq API and openai-gpt-oss120B, analyzes business requirements and produces system modules, database schemas, and pseudo code in a structured format.
 
-Returns structured JSON responses
+5. Workflow
 
-🔹 AI Layer (Groq + openai-gpt-oss120B)
+The user submits high-level business requirements through the frontend.
 
-Analyzes high-level requirements
+The backend generates an architect-level prompt.
 
-Generates:
+The AI model processes the input and derives technical specifications.
 
-System modules
+The output is returned in structured JSON format.
 
-Database schemas
-
-Pseudo code
-
-Architecture insights
-
-🔄 Workflow
-
-User submits a high-level business requirement
-
-Backend constructs an architect-level prompt
-
-AI analyzes the requirement
-
-Technical specifications are generated
-
-Results are returned in structured JSON
-
-Output is displayed on the Streamlit UI
-
-⚙️ Setup Instructions
-🔹 Clone the Repository
-git clone https://github.com/your-username/business-gen-ai.git
-cd business-gen-ai
-
-🔹 Install Dependencies
-pip install -r requirements.txt
-
-🔹 Configure Environment Variables
-
-Create a .env file and add your Groq API key:
-
-GROQ_API_KEY=your_api_key_here
-
-
-⚠️ Important: Keep your API key private.
-
-🔹 Run the Flask Backend
-python app.py
-
-🔹 Run the Streamlit Frontend
-streamlit run frontend.py
+The frontend displays the generated results
