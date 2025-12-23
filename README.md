@@ -1,11 +1,25 @@
-AI-Based Automation Tool for Converting Business Requirements into Technical Specifications
-Project Overview
+🤖 AI-Based Automation Tool for Converting Business Requirements into Technical Specifications
+📌 Project Overview
 
-This project is an AI-powered automation tool that converts high-level business requirements into low-level technical specifications, including system modules, database schemas, and pseudo code. It leverages Generative AI (openai-gpt-oss120B via Groq API) to analyze natural language requirements and generate structured, developer-ready outputs.
+This project is an AI-powered automation tool that converts high-level business requirements into low-level technical specifications, including:
 
-The tool is designed to reduce manual effort, improve consistency, and support faster system design in real-world software development.
+System modules
 
-Features
+Database schemas
+
+Pseudo code
+
+It leverages Generative AI using openai-gpt-oss120B via the Groq API to analyze natural language requirements and generate structured, developer-ready outputs.
+
+✨ The tool is designed to:
+
+Reduce manual effort
+
+Improve consistency
+
+Accelerate system design in real-world software development projects
+
+🚀 Features
 
 Automated conversion of business requirements into technical specifications
 
@@ -21,17 +35,25 @@ Detects missing or unclear requirements
 
 Provides structured JSON output
 
-Flask backend API with Streamlit frontend for user interaction
+Flask backend API with Streamlit frontend
 
-Simulates a panel of architects (Software, Backend, Database, Security)
+Simulates a panel of architects:
 
-Technologies Used
+Software Architect
+
+Backend Architect
+
+Database Architect
+
+Security Architect
+
+🛠️ Technologies Used
 
 Python
 
-Flask (Backend API)
+Flask – Backend API
 
-Streamlit (Frontend UI)
+Streamlit – Frontend UI
 
 Groq API
 
@@ -39,51 +61,68 @@ openai-gpt-oss120B
 
 JSON
 
-System Architecture
+🏗️ System Architecture
+🔹 Frontend (Streamlit)
 
-Frontend (Streamlit):
-User interface to input business requirements and view generated specifications.
+User interface to input business requirements
 
-Backend (Flask):
-Handles API requests, orchestrates AI prompts, and returns structured JSON responses.
+Displays generated technical specifications
 
-AI Layer (Groq + openai-gpt-oss120B):
-Processes high-level requirements and generates modules, database schemas, pseudo code, and architecture diagrams.
+🔹 Backend (Flask)
 
-Workflow
+Handles API requests
 
-User submits a high-level business requirement.
+Constructs architect-level AI prompts
 
-Backend constructs an architect-level prompt for the AI.
+Returns structured JSON responses
 
-AI analyzes the requirement and generates technical specifications.
+🔹 AI Layer (Groq + openai-gpt-oss120B)
 
-Results are returned in structured JSON format and displayed on the UI.
+Analyzes high-level requirements
 
-Setup Instructions
+Generates:
 
-Clone the repository:
+System modules
 
+Database schemas
+
+Pseudo code
+
+Architecture insights
+
+🔄 Workflow
+
+User submits a high-level business requirement
+
+Backend constructs an architect-level prompt
+
+AI analyzes the requirement
+
+Technical specifications are generated
+
+Results are returned in structured JSON
+
+Output is displayed on the Streamlit UI
+
+⚙️ Setup Instructions
+🔹 Clone the Repository
 git clone https://github.com/your-username/business-gen-ai.git
 cd business-gen-ai
 
-
-Install dependencies:
-
+🔹 Install Dependencies
 pip install -r requirements.txt
 
+🔹 Configure Environment Variables
 
 Create a .env file and add your Groq API key:
 
 GROQ_API_KEY=your_api_key_here
 
 
-Run the Flask backend:
+⚠️ Important: Keep your API key private.
 
+🔹 Run the Flask Backend
 python app.py
 
-
-Run the Streamlit frontend:
-
+🔹 Run the Streamlit Frontend
 streamlit run frontend.py
-
